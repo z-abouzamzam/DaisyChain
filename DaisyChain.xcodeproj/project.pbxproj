@@ -14,6 +14,9 @@
 		18D1F75C1C6FDBA3004D6D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D1F75A1C6FDBA3004D6D8C /* LaunchScreen.storyboard */; };
 		18D1F7671C6FDBA3004D6D8C /* DaisyChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1F7661C6FDBA3004D6D8C /* DaisyChainTests.swift */; };
 		18D1F7721C6FDBA4004D6D8C /* DaisyChainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1F7711C6FDBA4004D6D8C /* DaisyChainUITests.swift */; };
+		18D1F7801C6FE0D8004D6D8C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */; };
+		18D1F7821C6FE136004D6D8C /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F7811C6FE136004D6D8C /* Spotify.framework */; };
+		18D1F7841C6FE21C004D6D8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,10 @@
 		18D1F76D1C6FDBA4004D6D8C /* DaisyChainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaisyChainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D1F7711C6FDBA4004D6D8C /* DaisyChainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaisyChainUITests.swift; sourceTree = "<group>"; };
 		18D1F7731C6FDBA4004D6D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		18D1F7811C6FE136004D6D8C /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = "../../../../../../../Downloads/ios-sdk-master/Spotify.framework"; sourceTree = "<group>"; };
+		18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		18D1F7851C6FE241004D6D8C /* DaisyChain-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DaisyChain-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D1F7841C6FE21C004D6D8C /* AVFoundation.framework in Frameworks */,
+				18D1F7821C6FE136004D6D8C /* Spotify.framework in Frameworks */,
+				18D1F7801C6FE0D8004D6D8C /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +87,9 @@
 		18D1F7451C6FDBA3004D6D8C = {
 			isa = PBXGroup;
 			children = (
+				18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */,
+				18D1F7811C6FE136004D6D8C /* Spotify.framework */,
+				18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */,
 				18D1F7501C6FDBA3004D6D8C /* DaisyChain */,
 				18D1F7651C6FDBA3004D6D8C /* DaisyChainTests */,
 				18D1F7701C6FDBA4004D6D8C /* DaisyChainUITests */,
@@ -103,6 +116,7 @@
 				18D1F7581C6FDBA3004D6D8C /* Assets.xcassets */,
 				18D1F75A1C6FDBA3004D6D8C /* LaunchScreen.storyboard */,
 				18D1F75D1C6FDBA3004D6D8C /* Info.plist */,
+				18D1F7851C6FE241004D6D8C /* DaisyChain-Bridging-Header.h */,
 			);
 			path = DaisyChain;
 			sourceTree = "<group>";
@@ -187,11 +201,13 @@
 		18D1F7461C6FDBA3004D6D8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Zafir Abou-Zamzam";
 				TargetAttributes = {
 					18D1F74D1C6FDBA3004D6D8C = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = G9UN557WEP;
 					};
 					18D1F7611C6FDBA3004D6D8C = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -398,10 +414,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DaisyChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeday.DaisyChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DaisyChain/DaisyChain-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -409,10 +433,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DaisyChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeday.DaisyChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DaisyChain/DaisyChain-Bridging-Header.h";
 			};
 			name = Release;
 		};
