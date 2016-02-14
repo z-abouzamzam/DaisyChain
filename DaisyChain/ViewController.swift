@@ -8,11 +8,13 @@
 
 import UIKit
 import MediaPlayer
-let newColor = UIColor.whiteColor().CGColor
-var defaults = NSUserDefaults.standardUserDefaults().objectForKey("userName")
-var success = false
+
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    let newColor = UIColor.whiteColor().CGColor
+    var defaults = NSUserDefaults.standardUserDefaults()
+    var user: String?
+    var success = false
 
     @IBOutlet var stateLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
@@ -30,12 +32,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if State.text != "" && Name.text != ""
         {
             Error.text = ""
-            defaults = State.text! + "." + Name.text!
-            NSUserDefaults.standardUserDefaults().setObject(defaults, forKey: "userName")
+    
+            if let name = Name.text, state = State.text {
+                user = "\(name) from \(state)"
+            }
+    
+            defaults.setValue(user, forKey: "user")
+            defaults.synchronize()
             // NSUserDefaults.standardUserDefaults().synchronize()
                 // forces save to disk since nsusedefaults saves in background
                 // saves in main thread - thus could freeze UI momentarily
-            print(defaults!)
+            print(user!)
             self.performSegueWithIdentifier("TurnUp", sender: UIButton())
             success = true
         }
