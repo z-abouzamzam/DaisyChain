@@ -27,16 +27,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         {
             Error.text = ""
             defaults = State.text! + "." + Name.text!
+            NSUserDefaults.standardUserDefaults().setObject(defaults, forKey: "userName")
+            // NSUserDefaults.standardUserDefaults().synchronize()
+                // forces save to disk since nsusedefaults saves in background
+                // saves in main thread - thus could freeze UI momentarily
+            print(defaults!)
+            self.performSegueWithIdentifier("TurnUp", sender: UIButton())
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let placeholder = NSAttributedString(string: "Alan Smithee", attributes: [NSForegroundColorAttributeName:UIColor.grayColor()])
         let placeholder1 = NSAttributedString(string: "New York", attributes: [NSForegroundColorAttributeName:UIColor.grayColor()])
         State.layer.cornerRadius = 10
         Name.layer.cornerRadius = 10
-        State.layer.borderWidth = 2
-        Name.layer.borderWidth = 2
+        State.layer.borderWidth = 1
+        Name.layer.borderWidth = 1
         State.layer.borderColor = newColor
         Name.layer.borderColor = newColor
         State.attributedPlaceholder = placeholder1
@@ -55,6 +62,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     {
         TextField.resignFirstResponder()
         return true
+    }
+    func textFieldDidBeginEditing(textField: UITextField) {
+        UIView.setAnimationCurve(UIViewAnimationCurve.EaseInOut)
+        UIView.animateWithDuration(0.25) { () -> Void in
+        self.view.frame.origin.y = self.view.frame.origin.y - 100
+        }
+    }
+    func textFieldDidEndEditing(textField: UITextField) {
+        UIView.setAnimationCurve(UIViewAnimationCurve.EaseInOut)
+        UIView.animateWithDuration(0.25) { () -> Void in
+        self.view.frame.origin.y = self.view.frame.origin.y + 100
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
