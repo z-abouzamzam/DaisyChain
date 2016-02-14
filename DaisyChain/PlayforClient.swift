@@ -21,20 +21,24 @@ class FifthViewController: UIViewController {
     var video: [Video] = [Video]()
     var model = VideoModel()
     var disCon = ColorServiceManager().session
-    
+//    var timer, timer2: NSTimer!
+//    var date: NSDate?
     
     var defaults = NSUserDefaults.standardUserDefaults()
     
     @IBAction func searchTextEnd(sender: AnyObject) {
         print(self.search.text!)
         
-        
-        self.model.search = self.search.text!
-        print("the search var is \(self.model.search)")
-        
+        if let searchBar = self.search.text {
+            self.model.search = searchBar
+            print("the search var is \(searchBar)")
+        }
+//        self.date = NSDate(timeIntervalSinceNow: 5)
+//        print(self.date)
         // getVideo callback to call the finish
         self.model.getVideo { () -> Void in
             self.finish()
+            
         }
     }
     
@@ -57,7 +61,10 @@ class FifthViewController: UIViewController {
             videoPlayerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: video)
             videoPlayerViewController.presentInView(videoView)
             videoPlayerViewController.moviePlayer.play()
-        } else {
+//            timer.fireDate = date!
+            }
+        else
+        {
             print("there is nothing to set on web view")
             print(self.cellVideo)
         }
@@ -81,9 +88,20 @@ class FifthViewController: UIViewController {
         super.viewDidLoad()
         colorService.delegate = self
         self.Connection.text = ""
+//        timer = NSTimer.init(timeInterval: 0.0, target: self, selector: Selector(update()), userInfo: nil, repeats: false)
+//        timer2 = NSTimer.init(timeInterval: 0.0, target: self, selector: Selector(update2()), userInfo: nil, repeats: false)
         // if there is something playing on other device
     }
     
+//    func update()
+//    {
+//        videoPlayerViewController.moviePlayer.play()
+//    }
+//    func update2()
+//    {
+//        videoPlayerViewController.moviePlayer.play()
+//    }
+//    
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(true)
         videoPlayerViewController.moviePlayer.stop()
@@ -101,6 +119,11 @@ extension FifthViewController : ColorServiceManagerDelegate {
     
     func colorChanged(manager: ColorServiceManager, colorString: String) {
         NSOperationQueue.mainQueue().addOperationWithBlock { () -> Void in
+//            self.timer2.fireDate = self.date!
+//            print(self.date!)
+            if (self.videoPlayerViewController.moviePlayer.playbackState == MPMoviePlaybackState.Playing) {
+                self.videoPlayerViewController.moviePlayer.stop()
+            }
             self.playVideo(colorString)
         }
     }

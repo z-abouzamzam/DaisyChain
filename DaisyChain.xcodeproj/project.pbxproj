@@ -17,6 +17,12 @@
 		18D1F7801C6FE0D8004D6D8C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */; };
 		18D1F7841C6FE21C004D6D8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */; };
 		18D1F78B1C6FE88F004D6D8C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F78A1C6FE88F004D6D8C /* MediaPlayer.framework */; };
+		2301D6471C70E0FF00D3C4AD /* Crystal.psd in Resources */ = {isa = PBXBuildFile; fileRef = 2301D6421C70E0FF00D3C4AD /* Crystal.psd */; };
+		2301D6481C70E0FF00D3C4AD /* Crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2301D6431C70E0FF00D3C4AD /* Crystal.png */; };
+		2301D6491C70E0FF00D3C4AD /* CrystalW.png in Resources */ = {isa = PBXBuildFile; fileRef = 2301D6441C70E0FF00D3C4AD /* CrystalW.png */; };
+		2301D64A1C70E0FF00D3C4AD /* Back2.psd in Resources */ = {isa = PBXBuildFile; fileRef = 2301D6451C70E0FF00D3C4AD /* Back2.psd */; };
+		2301D64B1C70E0FF00D3C4AD /* Back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2301D6461C70E0FF00D3C4AD /* Back2.png */; };
+		2301D64D1C70E12F00D3C4AD /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2301D64C1C70E12F00D3C4AD /* iTunesArtwork@2x.png */; };
 		23277FF01C709B8D00D2EDF9 /* PlayforClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23277FEF1C709B8D00D2EDF9 /* PlayforClient.swift */; };
 		23277FF21C70A24800D2EDF9 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23277FF11C70A24800D2EDF9 /* Host.swift */; };
 		239CAAA11C7038A60009FDA5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CAA9F1C7038A60009FDA5 /* SecondViewController.swift */; };
@@ -61,6 +67,12 @@
 		18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		18D1F78A1C6FE88F004D6D8C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2301D6421C70E0FF00D3C4AD /* Crystal.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crystal.psd; sourceTree = "<group>"; };
+		2301D6431C70E0FF00D3C4AD /* Crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crystal.png; sourceTree = "<group>"; };
+		2301D6441C70E0FF00D3C4AD /* CrystalW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CrystalW.png; sourceTree = "<group>"; };
+		2301D6451C70E0FF00D3C4AD /* Back2.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Back2.psd; sourceTree = "<group>"; };
+		2301D6461C70E0FF00D3C4AD /* Back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back2.png; sourceTree = "<group>"; };
+		2301D64C1C70E12F00D3C4AD /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "App Icon [Squared]/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		23277FEF1C709B8D00D2EDF9 /* PlayforClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayforClient.swift; sourceTree = "<group>"; };
 		23277FF11C70A24800D2EDF9 /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 		239CAA9F1C7038A60009FDA5 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +143,12 @@
 		18D1F7501C6FDBA3004D6D8C /* DaisyChain */ = {
 			isa = PBXGroup;
 			children = (
+				2301D64C1C70E12F00D3C4AD /* iTunesArtwork@2x.png */,
+				2301D6421C70E0FF00D3C4AD /* Crystal.psd */,
+				2301D6431C70E0FF00D3C4AD /* Crystal.png */,
+				2301D6441C70E0FF00D3C4AD /* CrystalW.png */,
+				2301D6451C70E0FF00D3C4AD /* Back2.psd */,
+				2301D6461C70E0FF00D3C4AD /* Back2.png */,
 				18D1F7511C6FDBA3004D6D8C /* AppDelegate.swift */,
 				18D1F7551C6FDBA3004D6D8C /* Main.storyboard */,
 				4B14510E1C70B27A0011B7FE /* Video.swift */,
@@ -292,7 +310,13 @@
 			files = (
 				18D1F75C1C6FDBA3004D6D8C /* LaunchScreen.storyboard in Resources */,
 				18D1F7591C6FDBA3004D6D8C /* Assets.xcassets in Resources */,
+				2301D6471C70E0FF00D3C4AD /* Crystal.psd in Resources */,
+				2301D6481C70E0FF00D3C4AD /* Crystal.png in Resources */,
+				2301D64D1C70E12F00D3C4AD /* iTunesArtwork@2x.png in Resources */,
+				2301D6491C70E0FF00D3C4AD /* CrystalW.png in Resources */,
 				18D1F7571C6FDBA3004D6D8C /* Main.storyboard in Resources */,
+				2301D64A1C70E0FF00D3C4AD /* Back2.psd in Resources */,
+				2301D64B1C70E0FF00D3C4AD /* Back2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

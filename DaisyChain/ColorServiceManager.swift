@@ -61,8 +61,7 @@ class ColorServiceManager : NSObject {
             
             do {
                 try self.session.sendData(data!, toPeers: session.connectedPeers, withMode: MCSessionSendDataMode.Reliable)
-                
-                
+
             } catch {
                 print("\(error)")
             }

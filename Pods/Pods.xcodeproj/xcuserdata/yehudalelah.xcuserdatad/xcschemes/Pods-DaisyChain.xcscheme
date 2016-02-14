@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1DD86BAB4192831A13E9FD1F'
+               BlueprintIdentifier = 'F1F27CCE7143145B55AEA2D6'
                BlueprintName = 'Pods-DaisyChain'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_DaisyChain.framework'>
