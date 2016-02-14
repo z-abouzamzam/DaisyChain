@@ -17,9 +17,12 @@
 		18D1F7801C6FE0D8004D6D8C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */; };
 		18D1F7841C6FE21C004D6D8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */; };
 		18D1F78B1C6FE88F004D6D8C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F78A1C6FE88F004D6D8C /* MediaPlayer.framework */; };
+		23277FEE1C709B5B00D2EDF9 /* connectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23277FED1C709B5B00D2EDF9 /* connectionDelegate.swift */; };
+		23277FF01C709B8D00D2EDF9 /* PlayforClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23277FEF1C709B8D00D2EDF9 /* PlayforClient.swift */; };
+		23277FF21C70A24800D2EDF9 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23277FF11C70A24800D2EDF9 /* Host.swift */; };
+		23277FF41C70A42400D2EDF9 /* Third.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23277FF31C70A42400D2EDF9 /* Third.swift */; };
 		239CAAA11C7038A60009FDA5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CAA9F1C7038A60009FDA5 /* SecondViewController.swift */; };
-		239CAAA41C705A050009FDA5 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CAAA31C705A050009FDA5 /* ThirdViewController.swift */; };
-		239CAAA61C705A430009FDA5 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CAAA51C705A430009FDA5 /* FourthViewController.swift */; };
+		239CAAA61C705A430009FDA5 /* Fourth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CAAA51C705A430009FDA5 /* Fourth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +59,12 @@
 		18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		18D1F78A1C6FE88F004D6D8C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		23277FED1C709B5B00D2EDF9 /* connectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = connectionDelegate.swift; sourceTree = "<group>"; };
+		23277FEF1C709B8D00D2EDF9 /* PlayforClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayforClient.swift; sourceTree = "<group>"; };
+		23277FF11C70A24800D2EDF9 /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		23277FF31C70A42400D2EDF9 /* Third.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Third.swift; sourceTree = "<group>"; };
 		239CAA9F1C7038A60009FDA5 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		239CAAA31C705A050009FDA5 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		239CAAA51C705A430009FDA5 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		239CAAA51C705A430009FDA5 /* Fourth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fourth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		18D1F7451C6FDBA3004D6D8C = {
 			isa = PBXGroup;
 			children = (
+				23277FF11C70A24800D2EDF9 /* Host.swift */,
 				18D1F78A1C6FE88F004D6D8C /* MediaPlayer.framework */,
 				18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */,
 				18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */,
@@ -116,11 +123,13 @@
 			isa = PBXGroup;
 			children = (
 				18D1F7511C6FDBA3004D6D8C /* AppDelegate.swift */,
-				18D1F7531C6FDBA3004D6D8C /* ViewController.swift */,
+				23277FED1C709B5B00D2EDF9 /* connectionDelegate.swift */,
 				18D1F7551C6FDBA3004D6D8C /* Main.storyboard */,
-				239CAAA51C705A430009FDA5 /* FourthViewController.swift */,
+				23277FF31C70A42400D2EDF9 /* Third.swift */,
+				18D1F7531C6FDBA3004D6D8C /* ViewController.swift */,
 				239CAA9F1C7038A60009FDA5 /* SecondViewController.swift */,
-				239CAAA31C705A050009FDA5 /* ThirdViewController.swift */,
+				239CAAA51C705A430009FDA5 /* Fourth.swift */,
+				23277FEF1C709B8D00D2EDF9 /* PlayforClient.swift */,
 				18D1F7581C6FDBA3004D6D8C /* Assets.xcassets */,
 				18D1F75A1C6FDBA3004D6D8C /* LaunchScreen.storyboard */,
 				18D1F75D1C6FDBA3004D6D8C /* Info.plist */,
@@ -279,10 +288,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				239CAAA11C7038A60009FDA5 /* SecondViewController.swift in Sources */,
+				23277FF41C70A42400D2EDF9 /* Third.swift in Sources */,
 				18D1F7541C6FDBA3004D6D8C /* ViewController.swift in Sources */,
-				239CAAA41C705A050009FDA5 /* ThirdViewController.swift in Sources */,
+				23277FF21C70A24800D2EDF9 /* Host.swift in Sources */,
 				18D1F7521C6FDBA3004D6D8C /* AppDelegate.swift in Sources */,
-				239CAAA61C705A430009FDA5 /* FourthViewController.swift in Sources */,
+				23277FF01C709B8D00D2EDF9 /* PlayforClient.swift in Sources */,
+				239CAAA61C705A430009FDA5 /* Fourth.swift in Sources */,
+				23277FEE1C709B5B00D2EDF9 /* connectionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,13 +10,17 @@ import UIKit
 import MediaPlayer
 let newColor = UIColor.whiteColor().CGColor
 var defaults = NSUserDefaults.standardUserDefaults().objectForKey("userName")
+var success = false
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet var stateLabel: UILabel!
+    @IBOutlet var nameLabel: UILabel!
     @IBOutlet var goButton: UIButton!
     @IBOutlet var State: UITextField!
     @IBOutlet var Name: UITextField!
     @IBOutlet var Error: UILabel!
+    
     @IBAction func Go(sender: AnyObject)
     {
         if State.text == "" || Name.text == ""
@@ -33,6 +37,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 // saves in main thread - thus could freeze UI momentarily
             print(defaults!)
             self.performSegueWithIdentifier("TurnUp", sender: UIButton())
+            success = true
         }
     }
     
@@ -53,28 +58,33 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.State.delegate = self
         self.Name.delegate = self
     }
+    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
         // closes keyboard if tapped outside
     {
         self.view.endEditing(true)
     }
+    
     func textFieldShouldReturn(TextField: UITextField) -> Bool
     {
         TextField.resignFirstResponder()
         return true
     }
+    
     func textFieldDidBeginEditing(textField: UITextField) {
         UIView.setAnimationCurve(UIViewAnimationCurve.EaseInOut)
         UIView.animateWithDuration(0.25) { () -> Void in
         self.view.frame.origin.y = self.view.frame.origin.y - 100
         }
     }
+    
     func textFieldDidEndEditing(textField: UITextField) {
         UIView.setAnimationCurve(UIViewAnimationCurve.EaseInOut)
         UIView.animateWithDuration(0.25) { () -> Void in
         self.view.frame.origin.y = self.view.frame.origin.y + 100
         }
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
