@@ -30,6 +30,7 @@ class FourthViewController: UIViewController, UITableViewDelegate  {
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print(cells[indexPath.row])
+        self.performSegueWithIdentifier("segue1", sender: UITableView())
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     

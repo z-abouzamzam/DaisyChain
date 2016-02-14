@@ -1,0 +1,6 @@
+framework module Pods_DaisyChain {
+  umbrella header "Pods-DaisyChain-umbrella.h"
+
+  export *
+  module * { export * }
+}

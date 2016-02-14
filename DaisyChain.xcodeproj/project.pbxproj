@@ -17,9 +17,14 @@
 		18D1F7801C6FE0D8004D6D8C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */; };
 		18D1F7841C6FE21C004D6D8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */; };
 		18D1F78B1C6FE88F004D6D8C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F78A1C6FE88F004D6D8C /* MediaPlayer.framework */; };
+		23277FF01C709B8D00D2EDF9 /* PlayforClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23277FEF1C709B8D00D2EDF9 /* PlayforClient.swift */; };
+		23277FF21C70A24800D2EDF9 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23277FF11C70A24800D2EDF9 /* Host.swift */; };
 		239CAAA11C7038A60009FDA5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CAA9F1C7038A60009FDA5 /* SecondViewController.swift */; };
-		239CAAA41C705A050009FDA5 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CAAA31C705A050009FDA5 /* ThirdViewController.swift */; };
-		239CAAA61C705A430009FDA5 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CAAA51C705A430009FDA5 /* FourthViewController.swift */; };
+		239CAAA61C705A430009FDA5 /* Fourth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CAAA51C705A430009FDA5 /* Fourth.swift */; };
+		4B14510F1C70B27A0011B7FE /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14510E1C70B27A0011B7FE /* Video.swift */; };
+		4B1451111C70B29C0011B7FE /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1451101C70B29C0011B7FE /* VideoModel.swift */; };
+		4B545FBC1C70C6DD005F1123 /* ColorServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B545FBB1C70C6DD005F1123 /* ColorServiceManager.swift */; };
+		72BE29ED348A67711C412225 /* Pods_DaisyChain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F574F50B7BBFD7CEA33CF097 /* Pods_DaisyChain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +61,16 @@
 		18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		18D1F78A1C6FE88F004D6D8C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		23277FEF1C709B8D00D2EDF9 /* PlayforClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayforClient.swift; sourceTree = "<group>"; };
+		23277FF11C70A24800D2EDF9 /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 		239CAA9F1C7038A60009FDA5 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		239CAAA31C705A050009FDA5 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		239CAAA51C705A430009FDA5 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		239CAAA51C705A430009FDA5 /* Fourth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fourth.swift; sourceTree = "<group>"; };
+		4B14510E1C70B27A0011B7FE /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		4B1451101C70B29C0011B7FE /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		4B545FBB1C70C6DD005F1123 /* ColorServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorServiceManager.swift; sourceTree = "<group>"; };
+		4E160DA4F855839AA5EB0DB5 /* Pods-DaisyChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaisyChain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DaisyChain/Pods-DaisyChain.debug.xcconfig"; sourceTree = "<group>"; };
+		D9E5153FD8F368D459896976 /* Pods-DaisyChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaisyChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-DaisyChain/Pods-DaisyChain.release.xcconfig"; sourceTree = "<group>"; };
+		F574F50B7BBFD7CEA33CF097 /* Pods_DaisyChain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaisyChain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,7 @@
 				18D1F78B1C6FE88F004D6D8C /* MediaPlayer.framework in Frameworks */,
 				18D1F7841C6FE21C004D6D8C /* AVFoundation.framework in Frameworks */,
 				18D1F7801C6FE0D8004D6D8C /* CoreBluetooth.framework in Frameworks */,
+				72BE29ED348A67711C412225 /* Pods_DaisyChain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +105,7 @@
 		18D1F7451C6FDBA3004D6D8C = {
 			isa = PBXGroup;
 			children = (
+				23277FF11C70A24800D2EDF9 /* Host.swift */,
 				18D1F78A1C6FE88F004D6D8C /* MediaPlayer.framework */,
 				18D1F7831C6FE21C004D6D8C /* AVFoundation.framework */,
 				18D1F77F1C6FE0D8004D6D8C /* CoreBluetooth.framework */,
@@ -99,6 +113,8 @@
 				18D1F7651C6FDBA3004D6D8C /* DaisyChainTests */,
 				18D1F7701C6FDBA4004D6D8C /* DaisyChainUITests */,
 				18D1F74F1C6FDBA3004D6D8C /* Products */,
+				BB668791B06C6C610607159E /* Pods */,
+				5AA1194BDD6694B5B5849CBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,11 +132,14 @@
 			isa = PBXGroup;
 			children = (
 				18D1F7511C6FDBA3004D6D8C /* AppDelegate.swift */,
-				18D1F7531C6FDBA3004D6D8C /* ViewController.swift */,
 				18D1F7551C6FDBA3004D6D8C /* Main.storyboard */,
-				239CAAA51C705A430009FDA5 /* FourthViewController.swift */,
+				4B14510E1C70B27A0011B7FE /* Video.swift */,
+				4B1451101C70B29C0011B7FE /* VideoModel.swift */,
+				18D1F7531C6FDBA3004D6D8C /* ViewController.swift */,
 				239CAA9F1C7038A60009FDA5 /* SecondViewController.swift */,
-				239CAAA31C705A050009FDA5 /* ThirdViewController.swift */,
+				239CAAA51C705A430009FDA5 /* Fourth.swift */,
+				4B545FBB1C70C6DD005F1123 /* ColorServiceManager.swift */,
+				23277FEF1C709B8D00D2EDF9 /* PlayforClient.swift */,
 				18D1F7581C6FDBA3004D6D8C /* Assets.xcassets */,
 				18D1F75A1C6FDBA3004D6D8C /* LaunchScreen.storyboard */,
 				18D1F75D1C6FDBA3004D6D8C /* Info.plist */,
@@ -146,6 +165,23 @@
 			path = DaisyChainUITests;
 			sourceTree = "<group>";
 		};
+		5AA1194BDD6694B5B5849CBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F574F50B7BBFD7CEA33CF097 /* Pods_DaisyChain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB668791B06C6C610607159E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E160DA4F855839AA5EB0DB5 /* Pods-DaisyChain.debug.xcconfig */,
+				D9E5153FD8F368D459896976 /* Pods-DaisyChain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D1F7761C6FDBA4004D6D8C /* Build configuration list for PBXNativeTarget "DaisyChain" */;
 			buildPhases = (
+				3E607DF905AF4279D07BFA9A /* Check Pods Manifest.lock */,
 				18D1F74A1C6FDBA3004D6D8C /* Sources */,
 				18D1F74B1C6FDBA3004D6D8C /* Frameworks */,
 				18D1F74C1C6FDBA3004D6D8C /* Resources */,
+				20DF82B40F861502DADEAF30 /* Embed Pods Frameworks */,
+				3B9F80E5620D5F23ADA6BD6A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,7 +253,7 @@
 				TargetAttributes = {
 					18D1F74D1C6FDBA3004D6D8C = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = G9UN557WEP;
+						DevelopmentTeam = ZRS4E59Z53;
 					};
 					18D1F7611C6FDBA3004D6D8C = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -273,6 +312,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20DF82B40F861502DADEAF30 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaisyChain/Pods-DaisyChain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B9F80E5620D5F23ADA6BD6A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaisyChain/Pods-DaisyChain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E607DF905AF4279D07BFA9A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18D1F74A1C6FDBA3004D6D8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -280,9 +367,13 @@
 			files = (
 				239CAAA11C7038A60009FDA5 /* SecondViewController.swift in Sources */,
 				18D1F7541C6FDBA3004D6D8C /* ViewController.swift in Sources */,
-				239CAAA41C705A050009FDA5 /* ThirdViewController.swift in Sources */,
+				4B1451111C70B29C0011B7FE /* VideoModel.swift in Sources */,
+				23277FF21C70A24800D2EDF9 /* Host.swift in Sources */,
+				4B14510F1C70B27A0011B7FE /* Video.swift in Sources */,
+				4B545FBC1C70C6DD005F1123 /* ColorServiceManager.swift in Sources */,
 				18D1F7521C6FDBA3004D6D8C /* AppDelegate.swift in Sources */,
-				239CAAA61C705A430009FDA5 /* FourthViewController.swift in Sources */,
+				23277FF01C709B8D00D2EDF9 /* PlayforClient.swift in Sources */,
+				239CAAA61C705A430009FDA5 /* Fourth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +513,7 @@
 		};
 		18D1F7771C6FDBA4004D6D8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E160DA4F855839AA5EB0DB5 /* Pods-DaisyChain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -442,6 +534,7 @@
 		};
 		18D1F7781C6FDBA4004D6D8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E5153FD8F368D459896976 /* Pods-DaisyChain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
